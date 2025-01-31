@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.container {
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#chat-container {
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    height: 400px;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #e9ecef;
+}
+
+#user-input {
+    flex: 1;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #ced4da;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#send-button {
+    border-radius: 0 10px 10px 0;
+    padding: 15px 20px;
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+#send-button:disabled {
+    background-color: #ced4da;
+    border-color: #ced4da;
+    color: #fff;
+    cursor: default;
+    opacity: 0.7;
+}
+
+footer {
+    color: #343a40; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+footer a {
+    margin: 0 5px; /* Espaçamento entre os ícones */
+}
+
+footer img {
+    vertical-align: middle; /* Alinha os ícones verticalmente com o texto */
+}
+
+/* Estilos para tornar a aplicação responsiva */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    #chat-container {
+        height: 300px;
+    }
+
+    .message {
+        max-width: 90%;
+    }
+}

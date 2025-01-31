@@ -1,0 +1,15 @@
+{
+  "name": "google-ai-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^4.2.3"
+  },
+  "private": true
+}
