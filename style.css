@@ -91,7 +91,7 @@
     padding: 0.5rem;
     margin-top: 1rem;
     display: flex;
-    gap: 1rem; /* Adiciona espaço entre input e botão */
+    gap: 1rem;
   }
   
   #user-input {
@@ -100,17 +100,18 @@
     color: var(--text-light);
     font-size: 1rem;
     padding: 0.75rem;
-    flex: 1; /* Permite que o input ocupe o espaço disponível */
+    flex: 1;
+    margin-bottom: 20px;
   }
   
   #send-button {
     background: var(--primary-color);
     border: none;
     border-radius: 8px;
-    padding: 0.75rem 2rem; /* Aumenta o padding horizontal */
+    padding: 0.75rem 2rem;
     transition: transform 0.2s ease;
-    margin-left: auto; /* Empurra o botão para a direita */
-    min-width: 100px; /* Garante uma largura mínima para o botão */
+    margin-left: auto;
+    min-width: 100px;
   }
   
   #send-button:hover {
@@ -132,6 +133,7 @@
     background: var(--message-bot-bg) !important;
     color: var(--text-light) !important;
     padding: 1rem 0;
+    margin-top: 20px;
   }
   
   footer a img {
@@ -195,9 +197,8 @@
     margin-bottom: 1rem;
   }
   
-  /* Adicionar estilo específico para o texto abaixo do título */
   .text-muted {
-    margin-bottom: 1rem; /* Adiciona margem adequada antes do chat-container */
+    margin-bottom: 1rem;
   }
   
   .theme-toggle {
