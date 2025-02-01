@@ -1,15 +1,20 @@
 {
-  "name": "google-ai-api",
+  "name": "google-ai-chat",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "@types/node": "^22.0.0",
-    "typescript": "^4.2.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunobzs/google-ai-chat.git"
   },
-  "private": true
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunobzs/google-ai-chat/issues"
+  },
+  "homepage": "https://github.com/brunobzs/google-ai-chat#readme",
+  "description": ""
 }
