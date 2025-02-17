@@ -15,6 +15,7 @@ class App {
     this.isProcessing = false;
     this.lastRequestTime = 0;
 
+    this.clearButton = document.getElementById('clear-chat');
     this.init();
   }
 
@@ -25,6 +26,9 @@ class App {
         event.preventDefault();
         this.handleSubmit();
       }
+    });
+    this.clearButton.addEventListener('click', () => {
+      this.messageHandler.clearHistory();
     });
   }
 
@@ -52,7 +56,8 @@ class App {
 
     try {
       this.lastRequestTime = Date.now();
-      const botReply = await this.aiService.generateResponse(userMessage);
+      const history = this.messageHandler.getHistory();
+      const botReply = await this.aiService.generateResponse(userMessage, history);
       loadingIndicator.remove();
       this.messageHandler.displayMessage(botReply, 'bot');
     } catch (error) {
@@ -65,5 +70,4 @@ class App {
   }
 }
 
-// Inicializa a aplicação
 new App();
