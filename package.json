@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
     "url": "https://github.com/brunobzs/google-ai-chat/issues"
   },
   "homepage": "https://github.com/brunobzs/google-ai-chat#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.0.3"
+  }
 }
